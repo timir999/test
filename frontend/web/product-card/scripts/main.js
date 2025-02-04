@@ -56,7 +56,6 @@ class ProductCard extends HTMLElement {
             <div class="price">${product.price}</div>
           </div>
         </a>
-        <button class="addtocart">Add to Cart</button>
       `;
     }
   }

@@ -1,4 +1,4 @@
-(function(){const r=document.createElement("link").relList;if(r&&r.supports&&r.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))i(t);new MutationObserver(t=>{for(const e of t)if(e.type==="childList")for(const o of e.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&i(o)}).observe(document,{childList:!0,subtree:!0});function s(t){const e={};return t.integrity&&(e.integrity=t.integrity),t.referrerPolicy&&(e.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?e.credentials="include":t.crossOrigin==="anonymous"?e.credentials="omit":e.credentials="same-origin",e}function i(t){if(t.ep)return;t.ep=!0;const e=s(t);fetch(t.href,e)}})();class c extends HTMLElement{constructor(){super(),this.attachShadow({mode:"open"})}connectedCallback(){const r={title:this.getAttribute("data-title"),price:this.getAttribute("data-price"),image:this.getAttribute("data-image"),url:this.getAttribute("data-url")};this.shadowRoot.innerHTML=`
+(function(){const r=document.createElement("link").relList;if(r&&r.supports&&r.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))o(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const i of t.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&o(i)}).observe(document,{childList:!0,subtree:!0});function d(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function o(e){if(e.ep)return;e.ep=!0;const t=d(e);fetch(e.href,t)}})();class c extends HTMLElement{constructor(){super(),this.attachShadow({mode:"open"})}connectedCallback(){const r={title:this.getAttribute("data-title"),price:this.getAttribute("data-price"),image:this.getAttribute("data-image"),url:this.getAttribute("data-url")};this.shadowRoot.innerHTML=`
         <style>
           :host {
             display: block;
@@ -42,5 +42,4 @@
             <div class="price">${r.price}</div>
           </div>
         </a>
-        <button class="addtocart">Add to Cart</button>
       `}}customElements.define("product-card",c);
