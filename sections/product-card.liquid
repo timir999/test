@@ -1,0 +1,27 @@
+{% assign productcard = section.settings.productcard %}
+{% assign product = all_products[productcard] %}
+<product-card
+  data-title="{{ product.title }}"
+  data-price="{{ product.price | money }}"
+  data-image="{{ product.featured_image | img_url: '300x' }}"
+  data-url="{{ product.url }}"
+></product-card>
+
+{% schema %}
+{
+  "name": "Web Comp-Prod Card",
+  "class": "webcomponent-product-card",
+  "settings": [
+    {
+      "type": "product",
+      "id": "productcard",
+      "label": "Select Product"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Web Comp-Prod Card"
+    }
+  ]
+}
+{% endschema %}

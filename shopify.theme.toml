@@ -1,0 +1,7 @@
+[environments.dev]
+store = "test-codebie.myshopify.com"
+ignore = ["frontend/","package.json","package-lock.json","assets/.vite/"]
+
+[environments.prod]
+store = "test-codebie.myshopify.com"
+ignore = ["frontend/","package.json","package-lock.json","assets/.vite/"]
