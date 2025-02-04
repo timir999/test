@@ -81,11 +81,18 @@
       "settings": {
         "productcard": "the-3p-fulfilled-snowboard"
       }
+    },
+    "product_card_LAyrke": {
+      "type": "product-card",
+      "settings": {
+        "productcard": "the-archived-snowboard"
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "product_card_8kWzW9"
+    "product_card_8kWzW9",
+    "product_card_LAyrke"
   ]
 }
