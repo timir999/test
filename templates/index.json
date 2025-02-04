@@ -79,13 +79,13 @@
     "product_card_8kWzW9": {
       "type": "product-card",
       "settings": {
-        "productcard": "the-3p-fulfilled-snowboard"
+        "productcard": "the-collection-snowboard-liquid"
       }
     },
-    "product_card_LAyrke": {
+    "product_card_i9xMHQ": {
       "type": "product-card",
       "settings": {
-        "productcard": "the-archived-snowboard"
+        "productcard": "the-3p-fulfilled-snowboard"
       }
     }
   },
@@ -93,6 +93,6 @@
     "image_banner",
     "featured_collection",
     "product_card_8kWzW9",
-    "product_card_LAyrke"
+    "product_card_i9xMHQ"
   ]
 }
