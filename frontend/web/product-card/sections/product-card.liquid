@@ -2,13 +2,13 @@
 {% assign product = all_products[productcard] %}
 <h3>This is Product Card Component Example</h3>
 <product-card
-  data-title="{{ product.title }}"
-  data-price="{{ product.price | money }}"
-  data-image="{{ product.featured_image | img_url: '300x' }}"
-  data-url="{{ product.url }}"
+  image="{{ product.featured_image | img_url: '300x' }}"
+  title="{{ product.title }}"
+  price="{{ product.price | money_without_currency }}"
+  product-id="{{ product.variants.first.id }}"
 ></product-card>
 <style>
-h3{font-weight: bold; font-family: Arial; margin-top: 50px;}
+h3{font-weight: bold; font-family: Arial; margin-top: 50px; margin-left: 30px; margin-bottom: 20px;}
 </style>
 {% schema %}
 {
