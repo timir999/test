@@ -6,9 +6,10 @@
   data-price="{{ product.price | money }}"
   data-image="{{ product.featured_image | img_url: '300x' }}"
   data-url="{{ product.url }}"
-  product-id="{{ product.first_available_variant.id }}"
 ></product-card>
-
+<style>
+h3{font-weight: bold; font-family: Arial; margin-top: 50px;}
+</style>
 {% schema %}
 {
   "name": "Web Comp-Prod Card",
