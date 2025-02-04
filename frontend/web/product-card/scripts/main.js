@@ -47,9 +47,11 @@ class ProductCard extends HTMLElement {
       }
       </style>
       <div class="product-card">
+      <a class="product-link" href="">
         <img src="" alt="Product Image" class="product-image">
         <h2 class="product-title"></h2>
         <p class="product-price"></p>
+        </a>
         <button class="add-to-cart">Add to Cart</button>
       </div>
     `;
@@ -59,9 +61,10 @@ class ProductCard extends HTMLElement {
 
   connectedCallback() {
     const shadow = this.shadowRoot;
-
+    console.log(this.getAttribute('url'));
     // Set product data from attributes
     shadow.querySelector('.product-image').src = this.getAttribute('image');
+    shadow.querySelector('.product-link').setAttribute("href",this.getAttribute('url'));
     shadow.querySelector('.product-title').textContent = this.getAttribute('title');
     shadow.querySelector('.product-price').textContent = `$${this.getAttribute('price')}`;
 
