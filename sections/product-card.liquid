@@ -6,6 +6,7 @@
   data-price="{{ product.price | money }}"
   data-image="{{ product.featured_image | img_url: '300x' }}"
   data-url="{{ product.url }}"
+  product-id="{{ product.first_available_variant.id }}"
 ></product-card>
 
 {% schema %}
