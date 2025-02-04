@@ -43,6 +43,11 @@ class ProductCard extends HTMLElement {
             text-decoration: none;
             color: inherit;
           }
+          .addtocart{
+            background: #000;
+            color: #fff;
+            padding: 10px 30px;
+          }
         </style>
         <a href="${product.url}">
           <img src="${product.image}" alt="${product.title}" />
@@ -51,6 +56,7 @@ class ProductCard extends HTMLElement {
             <div class="price">${product.price}</div>
           </div>
         </a>
+        <button class="addtocart">Add to Cart</button>
       `;
     }
   }
